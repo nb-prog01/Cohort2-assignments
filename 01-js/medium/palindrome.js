@@ -5,7 +5,7 @@
 
 function isPalindrome(str) {
   str=str.toLowerCase();
-  console.log(str.replaceAll(/[^a-zA-Z]+/g,"").trim())
+  // console.log(str.replaceAll(/[^a-zA-Z]+/g,"").trim())
   strArray=str.replaceAll(/[^a-zA-Z]+/g,"").trim().split("");
   let Flag=true;
 
