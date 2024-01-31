@@ -4,7 +4,22 @@
 */
 
 function isPalindrome(str) {
-  return true;
-}
+  str=str.toLowerCase();
+  console.log(str.replaceAll(/[^a-zA-Z]+/g,"").trim())
+  strArray=str.replaceAll(/[^a-zA-Z]+/g,"").trim().split("");
+  let Flag=true;
+
+  for(let i=0;i<(strArray.length);i++){
+      if(strArray[i]!==strArray[(strArray.length-1)-i]){
+        console.log(i.toString()+" "+strArray[i]+ " "+strArray[(strArray.length-1)-i]+" "+((strArray.length-1)-i).toString())
+        console.log("not PalinDrome")
+        Flag=false
+        break;
+      }
+    }
+    return Flag
+  }
+
+// isPalindrome("fOqoif")
 
 module.exports = isPalindrome;
