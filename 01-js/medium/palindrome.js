@@ -11,7 +11,6 @@ function isPalindrome(str) {
 
   for(let i=0;i<(strArray.length);i++){
       if(strArray[i]!==strArray[(strArray.length-1)-i]){
-        console.log(i.toString()+" "+strArray[i]+ " "+strArray[(strArray.length-1)-i]+" "+((strArray.length-1)-i).toString())
         console.log("not PalinDrome")
         Flag=false
         break;
@@ -20,6 +19,6 @@ function isPalindrome(str) {
     return Flag
   }
 
-// isPalindrome("fOqoif")
+// isPalindrome("LoniNOl")
 
 module.exports = isPalindrome;
