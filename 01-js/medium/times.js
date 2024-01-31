@@ -9,5 +9,21 @@ There is no automated test for this one, this is more for you to understand time
 */
 
 function calculateTime(n) {
-    return 0.01;
+    let sum=0;
+    let Bdate=new Date();
+    let startTime=Bdate.getTime();
+    // sum=((n*(n+1))/2);
+
+    for(let i=1;i<=n;i++){
+        sum=sum+i;
+    }
+    let Adate=new Date();
+    let endTime=Adate.getTime();
+    let diff=endTime-startTime;
+    console.log(startTime);
+    console.log(endTime);
+    console.log(sum)
+    console.log(diff)
+    return diff;
 }
+calculateTime(1000000000)
