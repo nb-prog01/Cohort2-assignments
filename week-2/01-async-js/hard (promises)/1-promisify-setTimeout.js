@@ -4,14 +4,14 @@
 
 function wait(n) {
     let p=new Promise (function(resolve){
-        setTimeout(resolve("Wait is over"),n*1000)
+        setTimeout(resolve,n*1000)
     })
     return p;
 }
-async function main(){
-    const value=await wait(10000);
-    console.log(value);
-}
-main();
+// async function main(){
+//     const value=await wait(10000);
+//     console.log(value);
+// }
+// main();
 
 module.exports = wait;
